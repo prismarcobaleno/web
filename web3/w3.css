@@ -11,9 +11,36 @@ html{
 h1, h2, h3, h4, td{
 text-align: center ;}
 
-.v 
-{background: lightblue;
-color: darkgreen;}
+
+/* link (copiato da SOGNO.CSS)*/
+  a:link{
+    color: darkblue;
+    text-decoration: none; 
+    font-weight: bold;
+      border-bottom: 1px solid #ffff55; 
+    }
+  
+  /* link visitato */
+  a:visited {
+    
+    text-decoration: underline;
+    
+    }
+    
+  /* mouse sul link */
+  a:hover {
+   
+    text-decoration: none;
+    }
+  
+  /* link selezionato */
+  a:active {
+    
+     text-decoration: none;
+    }
+
+
+
 
 
 
@@ -36,22 +63,36 @@ li.c {list-style-image: url(https://www.splitbrain.org/_static/ico/ledicons/ico/
 
 
 div {
-border: 3px solid darkgreen;
-border-radius: 8px;
+
 
 margin: 10%;
 
 overflow: auto;
 margin-top: 1%;
 margin-bottom: 1%;
-padding: 1%;
-
+padding-left: 2%;
+padding-right: 2%;
 }
+
+footer{padding-top: 20vh;
+		
+	}
+
+.v 
+{background: lightblue;
+color: purple;
+border: 3px solid purple;
+border-radius: 8px;}
 
 .d{
 color:black ;
 background: lightgreen;
+border: 3px solid darkgreen;
+border-radius: 8px;
 }
+
+.due{display: flex;}
+.menodue {display: auto;}
 
 
 .stretto
@@ -78,7 +119,7 @@ padding: 1%
 
 .mio {
 background: #ccffff;
-color:purple;
+color: darkgreen;
 margin: 10%;
 border-radius: 8px;
 border: 3px solid darkgreen;
