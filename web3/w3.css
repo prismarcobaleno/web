@@ -39,23 +39,61 @@ text-align: center ;}
      text-decoration: none;
     }
 
+/* LINK SU SFONDO SCURO:  */
+
+.a:link{
+    color: lightblue;
+     
+    font-weight: bold;
+    border-bottom: 1px solid #ffff55;  text-decoration: none;
+    }
+
+.a:visited {
+ color: lavender;
+ text-decoration: none;
+}
+
+/* LINK SU SFONDO SCURO: class="a" */
 
 
+aside { 
+position: fixed;
+top: 0;
+float: left;
+width: 15%}
 
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 1px;
+	padding-bottom: 1px;		
+}
+
+input {
+width: 4em
+}
 
 
 i {text-align: center;
-display:flex; 
 justify-content: center;
 align-items: center;
-margin: auto;
 }
 
-ul li {list-style-image: url(https://www.splitbrain.org/_static/ico/ledicons/ico/page_white_world.png);
+em {text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+ul li {
 
       image-rendering: pixelated;
       image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;}
+
+li.o {list-style-image: url(https://www.splitbrain.org/_static/ico/ledicons/ico/page_white_world.png);}
 
 li.s {list-style-image: url(https://www.splitbrain.org/_static/ico/ledicons/ico/wait.png);}
 
@@ -63,7 +101,7 @@ li.c {list-style-image: url(https://www.splitbrain.org/_static/ico/ledicons/ico/
 
 
 div {
-
+border: 1px solid gray;
 
 margin: 5%;
 
@@ -74,14 +112,7 @@ padding-left: 1%;
 padding-right: 1%;
 }
 
-footer{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding-top: 1px;
-	padding-bottom: 1px;		
-}
+
 
 .v 
 {background: lightblue;

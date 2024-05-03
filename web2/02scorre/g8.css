@@ -2,7 +2,7 @@
 
 html{ 
       font-family: sans-serif;
-      font:  1.5em
+      font:  1.5em;
       line-height: 1.5;
       margin: 0%;
       letter-spacing: 0.04em;
@@ -89,6 +89,21 @@ color: #5577bb;}
 {color: lightblue;}
 
 
+/* LINK SU SFONDO SCURO:  */
+
+.a:link{
+    color: lightblue;
+     
+    font-weight: bold;
+      border-bottom: 1px solid #ffff55; 
+    }
+
+.a:visited {
+ color: lavender;
+ text-decoration: none;
+}
+
+/* LINK SU SFONDO SCURO: class="a" */
 
 
 

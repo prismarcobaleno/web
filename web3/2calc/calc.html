@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esempio</title>
+    <title>Calcolatrice</title>
     <link href="../w3.css" rel="stylesheet" type="text/css" media="all">
-     
+    <script src="./calc.js"></script>
     <meta property="og:description" content="Descrizione"> 
     
     <link rel="icon" type="image/png" href="https://cdn4.iconfinder.com/data/icons/universal-signs-symbols/128/transgender-color-1024.png" >
@@ -19,52 +19,90 @@
     
     <main>
  
- <div class="d v">
+ <div class="d codice">
   
-    <h2>Sottotitolo</h2> 
-    
-	<div class="due">	
-		<div> 
-		 	<label>Inserisci primo numero: <input id="numerouno" inputmode="numeric" type="number"></label>
-		 	<br><br>
-		 	<button onclick="prendi1()">Stampa primo numero: </button>
-		 	<span id="num1">num1</span>
+    <h2>Ben 5 operazioni tra numeri interi positivi!</h2> 
+   
+		
+ 
+	<div id="calcolatrice">  
+	
+		 <div> 
+		 	<label>Primo numero: <input id="numerouno" inputmode="numeric" type="number" required title="inserisci un numero intero positivo"></label> 
+		 	
+		 	<button onclick="prendi1()">Stampa num1: </button>
+			 	<span id="num1">num1</span>
 		</div>
 		
-	 	<br>
+	 	<div> 
+	 	<label>Operazione: <select id="operazione" required>
+		 	<option value="+">pi&ugrave;</option>
+		 	<option value="-">meno</option>
+		 	<option value="*">per</option>
+		 	<option value="/">diviso</option>
+		 	<option value="%">modulo</option>
+	 	</select>
+	 	</label>
+	 	</div>
 	 	
 	 	<div>
-		 	<label>Inserisci secondo numero: <input id="numerodue" inputmode="numeric" type="number"></label>
-		 	<br><br>
-		 	<button onclick="prendi2()">Stampa secondo numero: </button>
-		 	<span id="num2">num2</span>
-	        </div>
-	</div>
+		 	<label>Secondo numero: <input id="numerodue" inputmode="numeric" type="number" required title="inserisci un numero intero positivo"></label> 
+		 	
+		 	<button onclick="prendi2()">Stampa num2:</button>
+			 	<span id="num2">num2</span>
+		</div>  
+		
+		<div><input type="submit" value="Prova!" onclick="funzione()"></div>
+	</div> <!-- form -->  
+	
+	
+		 
+		
+	
+	
+<h2>L'ultimo risultato era: <span id="risultato">Risultato</span></h2>
+	
+
+
 	
 <script>
-function prendi1() {
-  var x = document.getElementById("numerouno").value;
-  document.getElementById("num1").innerHTML = x;
-}
 
-function prendi2() {
-  var y = document.getElementById("numerodue").value;
-  document.getElementById("num2").innerHTML = y;
-}
+ // Visualizza il messaggio di avviso ogni 30 secondi
+    setInterval(function() {
+      alert("Ti prego, usami...");
+    }
+     , 30000 );
+  
+  
+
+	  function prendi1() {
+	    var num1 = document.getElementById("numerouno").value;
+	  document.getElementById("num1").innerHTML = num1;
+	}
+
+	function prendi2() {
+	   var num2 = document.getElementById("numerodue").value;
+	  document.getElementById("num2").innerHTML = num2;
+	}
+       
+ 
+
+
+
+   
 </script>
 </div>
  
  </main> 
   
-  <footer><div class="mio">
- 	<br>
-	 <i>⚧ rosa 2024</i>
-	<br>
+  <footer><div class="v">
+ 	
+	 <details><summary><i>⚧ rosa 2024</i></summary>
 	 <a href="#inizio">Torna su</a>
 	<br>
 	 Torna a <a href="../../web2/01 dettagli/dettagli.html">Casa</a>  
-	<br>
- <br></div></footer>
+	</details>
+</div></footer>
                              
   </body>
 </html>
